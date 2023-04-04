@@ -1,29 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Navbar from './navbar.js';
-import Hero from './hero';
-import Footer from './Footer';
-import Card from './card';
+import Navbar from './navbar';
+import Card from './Card';
+import data from './mock.js'
+import Button from './button';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-let name = "Anvarjon";
-let user =  {name:" Akmaljon"};
-let desc = "Some text";
 
 
 root.render(
   <React.StrictMode>
-    <Navbar/>
-    <Hero/>
-    <Card/>
-      <h1>Hello world {user.name}</h1>
-      <p>Description {desc} </p>
-      <h1>{name}</h1>
-      <Hero/>
-      <Footer/>
+    {/* <Navbar title="HTML" count={10}  />
+    <Navbar title="CSS" count={15}  />
+    <Navbar title="REACT" count={20}  > */}
+    <Button bg="blue" color="white" title="Login" />
+    <Button bg="red" color="white" title="Registratsiya" />
+    <Button bg="aqua" color="black" title="Buy" />
+    <div className='card__box'>
+      {
+        data.map((value )=> (
+      <Card key={value.id} title={value.title} country={value.country} price={value.price} />
+        ))
+      }
+    
+    </div>
+    {/* <h1>Hello world</h1> */}
   </React.StrictMode>
 );
 

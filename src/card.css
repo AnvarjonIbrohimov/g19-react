@@ -1,14 +1,31 @@
-.card {
-    width: 400px;
-    height: 500px;
+.card__container{
+    width: 300px;
+    height: 400px;
     border: 1px solid black;
-    padding: 14px;
-    border-radius: 5px;
 }
-.card__title{
-    color: blue;
-};
 
-.text{
-    color: red;
+
+.card__image{
+    width: 100%;
+    height: 250px;
+    background-color: #d9d9d9;
+}
+
+.card__title{
+    font-size: 18px;
+    margin: 0;
+}
+
+.card__desc {
+    color: #333;
+    margin: 0;
+}
+
+.card__price{
+    margin: 0;
+}
+
+.card__box{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
 }

@@ -1,29 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Navbar from './navbar.js';
-import Hero from './hero';
-import Footer from './Footer';
-import Card from './card';
+import State from './State';
+import Login from './Login';
+import DollorToSom from './DollorToSom';
+import YearCheack from './YearCheack';
+import NumOrtaArf from './NumOrtaArf';
+import CRUD from './CRUD';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-let name = "Anvarjon";
-let user =  {name:" Akmaljon"};
-let desc = "Some text";
-
 
 root.render(
   <React.StrictMode>
-    <Navbar/>
-    <Hero/>
-    <Card/>
-      <h1>Hello world {user.name}</h1>
-      <p>Description {desc} </p>
-      <h1>{name}</h1>
-      <Hero/>
-      <Footer/>
+   {/* <State/>*/}
+   {/*<Login/>*/}
+   {/*<DollorToSom/>
+   <br/>
+   <YearCheack/>
+   <hr/>
+   <br/>
+   <NumOrtaArf/>
+<hr/>*/}
+   <CRUD/>
   </React.StrictMode>
 );
 

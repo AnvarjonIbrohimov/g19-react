@@ -1,29 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Navbar from './navbar.js';
-import Hero from './hero';
-import Footer from './Footer';
-import Card from './card';
+import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar/Navbar2';
+import App from './class__lesson';
+import Webbrain from './webbrain';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-let name = "Anvarjon";
-let user =  {name:" Akmaljon"};
-let desc = "Some text";
-
-
 root.render(
   <React.StrictMode>
-    <Navbar/>
-    <Hero/>
-    <Card/>
-      <h1>Hello world {user.name}</h1>
-      <p>Description {desc} </p>
-      <h1>{name}</h1>
-      <Hero/>
-      <Footer/>
+    {/* <Navbar/> */}
+    <Webbrain/>
+    {/* <Navbar2/> */}
+    {/* <App/> */}
   </React.StrictMode>
 );
 

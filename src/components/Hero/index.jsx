@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import {Container, Wrapper } from './style';
 import { Rate } from 'antd';
 import Button from '../Generic/Button';
+import ReactPlayer from 'react-player/youtube'
 
 export default class Hero extends Component {
   render() {
     return (
+      <>
       <Wrapper>
         <Container>
             <Container.Title>STAR WARS</Container.Title>
@@ -18,6 +20,8 @@ export default class Hero extends Component {
             </Container.Btns>
         </Container>
       </Wrapper>
+      <ReactPlayer controls={true} url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+      </>
     )
   }
 }

@@ -3,8 +3,13 @@ import {Container} from './style';
 
 class Button extends Component {
   render() {
-    return <Container type={this.props.type}>
-        {this.props.icon && this.props.icon}{this.props.children}
+    return <Container 
+    style={this.props.style}
+            disabled={this.props.disabled && "disabled"}
+            onClick={this.props.onClick} 
+            type={this.props.type}>
+
+          {this.props.icon && this.props.icon}{this.props.children}
         </Container>
   }
 }
